@@ -1,0 +1,74 @@
+name: Project Radius Website
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Build Hugo Website
+    if: github.event.action != 'closed'
+    runs-on: ubuntu-latest
+    env:
+      GOVER: '^1.17'
+      HUGO_ENV: production
+      SWA_BASE: 'salmon-meadow-0affa551e'
+    steps:
+      - name: Checkout website repo
+        uses: actions/checkout@v2
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2.5.0
+        with:
+          hugo-version: 0.102.3
+          extended: true
+      - name: Build Hugo Site
+        run: |
+          if [ $GITHUB_EVENT_NAME == 'pull_request' ]; then
+            STAGING_URL="https://${SWA_BASE}-${{github.event.number}}.2.azurestaticapps.net/"
+          fi
+          hugo ${STAGING_URL+-b "$STAGING_URL"}
+      - name: Upload Hugo artifacts
+        uses: actions/upload-artifact@master
+        with:
+          name: hugo_build
+          path: ./public/
+          if-no-files-found: error
+  
+  deploy:
+    name: Deploy Website
+    needs: ['build']
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download Hugo artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: hugo_build
+          path: site/
+      - name: Deploy staging site
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.WEBSITE_SITE_TOKEN }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          action: "upload"
+          app_location: "site/"
+          api_location: "site/" 
+          output_location: ""
+          skip_app_build: true
+
+  close:
+    name: Close PR Staging Site
+    if: github.event_name == 'pull_request' && github.event.action == 'closed'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Close Pull Request
+        id: closepullrequest
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.WEBSITE_SITE_TOKEN }}
+          action: "close"
