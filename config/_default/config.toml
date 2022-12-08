@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "http://radapp.dev/"
+baseURL = "https://website.radapp.dev/"
 title = "Project Radius"
 theme = "bigspring-light"
 # post pagination
