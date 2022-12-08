@@ -6,7 +6,7 @@ banner:
   content : "Kubernetes is great, but cloud-native applications also include API front ends, key-value stores, observability systems, and more. You deserve tooling and experiences that describe your entire app."
   button:
     enable : true
-    label : "Visualize a Radius application"
+    label : "Demo a Radius application"
     link : "https://demo.radapp.dev"
 
 ##################### Feature ##########################
@@ -15,33 +15,33 @@ feature:
   title : "What Project Radius offers application teams"
   feature_item:
     # feature item loop
-    - name : "Application-centric"
-      icon : "fas fa-code"
+    - name : "App-centric Experiences"
+      icon : "fas fa-window-maximize"
       content : "Developers can focus on their applications instead of underlying platform infrastructure"
       
     # feature item loop
     - name : "Abstracted Runtimes"
-      icon : "fas fa-object-group"
+      icon : "fas fa-layer-group"
       content : "Developers don't need to learn Kubernetes. Instead they describe their app's requirements"
-      
-    # feature item loop
-    - name : "Portability"
-      icon : "fas fa-user-clock"
-      content : "Deploy your application across clouds and on-premises, with zero rewrites"
-      
+
     # feature item loop
     - name : "Separation of Concerns"
-      icon : "fas fa-heart"
+      icon : "fas fa-people-arrows"
       content : "Developers focus on their apps while operators focus on environments and infrastructure"
       
     # feature item loop
+    - name : "App Portability"
+      icon : "fas fa-share-from-square"
+      content : "Deploy your application across clouds and on-premises with zero app rewrites"
+      
+    # feature item loop
     - name : "Consistent Tooling"
-      icon : "fas fa-tachometer-alt"
+      icon : "fas fa-screwdriver-wrench"
       content : "Developers and operators can deploy, manage, and visualize applications with common tools"
       
     # feature item loop
     - name : "Automated & Secure"
-      icon : "fas fa-cloud"
+      icon : "fas fa-file-shield"
       content : "Operators can define and enforce organization best practices across applications"
       
 
@@ -51,50 +51,45 @@ service:
   enable : true
   service_item:
     # service item loop
-    - title : "It is the most advanced digital marketing and it company."
-      images:
-      - "images/service-1.png"
-      - "images/service-2.png"
-      - "images/service-3.png"
-      content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
-      button:
-        enable : true
-        label : "Check it out"
-        link : "#"
+    - title : "Learn how Project Radius can accelerate your application teams"
+      video:
+        enable: true
+        url: "https://microsoft.sharepoint.com/teams/radius/_layouts/15/embed.aspx?uniqueID=13a468f0-85a9-44a6-8113-17e4bae571b5"
+      content : "We believe that developers and IT teams need better tools to work with each other. We want to help IT teams ensure all of their applications meet operational requirements for excellence and security. We also want developers to know that their applications are meeting those requirements without those developers having to be experts in those requirements."
         
     # service item loop
-    - title : "It is a privately owned Information and cyber security company"
+    - title : "Automate infrastructure with Recipes"
       images:
-      - "images/service-1.png"
-      content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+      - "images/recipes.png"
+      content : "Create reusable templates for infrastructure provisioning that empower developers to quickly build applications that comply with  operational and security guidelines. No more manual ticketing systems or wikis telling developers how to deploy infrastructure."
       button:
         enable : true
         label : "Check it out"
-        link : "#"
+        link : "https://docs.radapp.dev/author-apps/recipes"
         
     # service item loop
-    - title : "It’s a team of experienced and skilled people with distributions"
+    - title : "Consistent tooling across clouds and on-premises"
       images:
-      - "images/service-2.png"
-      content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+      - "images/platforms.png"
+      content : "Project Radius makes it easy to build and operate applications on Azure, AWS, and on-premises using the same development and operations tool chain for developers and IT teams. This tooling consistency makes it easy to future proof investments and retain a common development, deployment, and operations framework."
       button:
         enable : true
-        label : "Check it out"
-        link : "#"
+        label : "Learn more"
+        link : "https://docs.radapp.dev/administrator-guides/platforms"
         
     # service item loop
-    - title : "A company standing different from others"
+    - title : "Built-in Dapr support"
       images:
-      - "images/service-3.png"
-      content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+      - "images/dapr-buildingblocks.png"
+      content : "Developers can leverage built-in support for [Dapr building blocks](https://dapr.io) to model and deploy state stores, pub/sub brokers, and more. Simply add a building block and Radius takes care of the rest, including generating all of your Dapr component and advanced scoping and security configuration"
       button:
         enable : true
-        label : "Check it out"
-        link : "#"
+        label : "Learn More"
+        link : "https://docs.radapp.dev/author-apps/dapr"
         
 ################### Screenshot ########################
 screenshot:
-  enable : true
+  enable : false
   title : "Experience the best <br> workflow with us"
   image : "images/screenshot.svg"
 
@@ -104,10 +99,10 @@ screenshot:
 call_to_action:
   enable : true
   title : "Ready to get started?"
-  image : "images/cta.svg"
-  content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur."
+  image : "images/tools.png"
+  content : "Visit the Project Radius getting started guide to learn more and begin rad-ifying your first application today"
   button:
     enable : true
-    label : "Contact Us"
-    link : "contact/"
+    label : "Get Started"
+    link : "https://docs.radapp.dev/getting-started"
 ---

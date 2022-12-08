@@ -65,11 +65,19 @@
         {{ end }}
       </div>
       <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0">
+        {{ if .video.enable }}
+        {{ with .video }}
+        <div style="position: relative; padding-bottom: 56.25%; max-width: 750px; height: 0; overflow: hidden; border-radius: 5px;">
+          <iframe width=750 height=360 src="{{ .url }}" allowfullscreen style="border:none; position: absolute; top: 0; left: 0; right: 0; bottom: 0; height: 100%; max-width: 100%;"></iframe>
+        </div>
+        {{ end }}
+        {{ else }}
         <div {{if gt (len .images) 1}} class="slider" {{end}}>
           {{ range .images }}
           <img src="{{ . | relURL }}" alt="" class="img-fluid">
           {{ end }}
         </div>
+        {{ end }}
       </div>
     </div>
   </div>
