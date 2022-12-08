@@ -11,7 +11,7 @@ banner:
 
 ##################### Feature ##########################
 feature:
-  enable : true
+  enable : false
   title : "What Project Radius offers application teams"
   feature_item:
     # feature item loop
