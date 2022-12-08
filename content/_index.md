@@ -3,7 +3,7 @@
 banner:
   title : "Cloud-native applications<br />are more than just Kubernetes"
   image : "images/banner-art.svg"
-  content : "Kubernetes is great, but cloud-native applications also include API front ends, key-value stores, observability systems, and more. You deserve tooling and experiences that describe your entire app."
+  content : "Kubernetes is great, but cloud-native applications also include API front ends, key-value stores, observability systems, and more.<br />You deserve tooling and experiences that describe your entire app."
   button:
     enable : true
     label : "Demo a Radius application"
