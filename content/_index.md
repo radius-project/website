@@ -7,7 +7,7 @@ banner:
   button:
     enable : true
     label : "Demo a Radius application"
-    link : "https://demo.radapp.dev"
+    link : "#"
 
 ##################### Feature ##########################
 feature:
