@@ -43,39 +43,37 @@ feature:
     - name : "Automated & Secure"
       icon : "fas fa-file-shield"
       content : "Operators can define and enforce organization best practices across applications"
-      
-
 
 ######################### Service #####################
 service:
   enable : true
   service_item:
-    # service item loop
-    - title : "Learn how Project Radius can accelerate your application teams"
+    # Tooling
+    - title : "Accelerate your<br />application teams"
       video:
         enable: true
         url: "https://microsoft.sharepoint.com/teams/radius/_layouts/15/embed.aspx?uniqueID=13a468f0-85a9-44a6-8113-17e4bae571b5"
       content : "We believe that developers and IT teams need better tools to work with each other. We want to help IT teams ensure all of their applications meet operational requirements for excellence and security. We also want developers to know that their applications are meeting those requirements without those developers having to be experts in those requirements."
-        
-    # service item loop
-    - title : "Automate infrastructure with Recipes"
-      images:
-      - "images/recipes.png"
-      content : "Create reusable templates for infrastructure provisioning that empower developers to quickly build applications that comply with  operational and security guidelines. No more manual ticketing systems or wikis telling developers how to deploy infrastructure."
-      button:
-        enable : true
-        label : "Check it out"
-        link : "https://docs.radapp.dev/author-apps/recipes"
-        
-    # service item loop
-    - title : "Consistent tooling across clouds and on-premises"
+    
+    # Portable
+    - title : "Build apps that are portable across clouds and on-prem"
       images:
       - "images/platforms.png"
-      content : "Project Radius makes it easy to build and operate applications on Azure, AWS, and on-premises using the same development and operations tool chain for developers and IT teams. This tooling consistency makes it easy to future proof investments and retain a common development, deployment, and operations framework."
+      content : "Project Radius makes it easy to build and operate applications on Azure, AWS, and on-premises with pluggable infrastructure. Developers describe their application's requirements (_databases, caching, identity, and more_), and operators bind apps to platforms leveraging Radius environments."
       button:
         enable : true
         label : "Learn more"
         link : "https://docs.radapp.dev/administrator-guides/platforms"
+
+    # Recipes
+    - title : "Automate infrastructure<br />provisioning with Recipes"
+      images:
+      - "images/recipes.png"
+      content : "Create reusable templates for infrastructure deployment and configuration that empower developers to quickly build applications that comply with operational and security guidelines. No more manual ticketing systems or wikis telling developers how to deploy infrastructure."
+      button:
+        enable : true
+        label : "Check it out"
+        link : "https://docs.radapp.dev/author-apps/recipes"
         
     # service item loop
     - title : "Built-in Dapr support"
