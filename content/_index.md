@@ -49,12 +49,12 @@ service:
   enable : true
   service_item:
     # Tooling
-    - title : "Accelerate your team<br />with consistent tooling"
+    - title : "Ensure apps meet org requirements<br /> for cost, security, and compliance"
       video:
         enable: true
         url: "https://microsoft.sharepoint.com/teams/radius/_layouts/15/embed.aspx?uniqueID=13a468f0-85a9-44a6-8113-17e4bae571b5"
       content : "We believe that developers and IT ops teams need better tools to work with each other. It's too hard for ops to ensure apps meet operational requirements for excellence and security. It's even harder for developers to know their apps are meeting those requirements, without having to become experts in the underlying platforms. We're here to help with consistent tooling across all your clouds and environments."
-    
+
     # Portable
     - title : "Build apps that are portable<br />across clouds and on-prem"
       images:
@@ -89,7 +89,7 @@ service:
     - title : "Built-in Dapr support"
       images:
       - "images/dapr-buildingblocks.png"
-      content : "Developers can leverage built-in support for [Dapr building blocks](https://dapr.io) to model and deploy state stores, pub/sub brokers, and more. Operators can define how infrastructure is deployed and configured. Simply add a building block and Radius takes care of the rest, including generating all of your Dapr components and applying advanced scoping and security configuration."
+      content : "Developers can leverage built-in support for [Dapr building blocks](https://dapr.io) such as state stores, pub/sub brokers, and more. When deployed, Radius binds the building blocks to supported infrastructure such as Azure Service Bus or AWS SQS, which operators can select and configure. All of your Dapr component configs and advanced security configuration is deployed and managed for you automatically."
       button:
         enable : true
         label : "Learn More"
