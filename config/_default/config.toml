@@ -2,6 +2,7 @@
 baseURL = "https://website.radapp.dev/"
 title = "Project Radius"
 theme = "bigspring-light"
+disableFastRender = true
 # post pagination
 paginate = "3"
 # post excerpt
@@ -13,4 +14,3 @@ googleAnalytics = "" # example : UA-123-45
 # unsafe html
 [markup.goldmark.renderer]
 unsafe = true
-disableFastRender = true
