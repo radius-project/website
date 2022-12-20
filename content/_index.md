@@ -5,13 +5,13 @@ banner:
   image : "images/banner-art.svg"
   content : "Kubernetes is great, but cloud-native applications are so much more. You deserve tooling and experiences that can describe, deploy, and manage your entire app, across any cloud and any platform."
   button:
-    enable : true
-    label : "Demo a Radius application"
-    link : "#"
+    enable : false
+    label : "Learn More"
+    link : "https://radapp.dev/concepts/overview/"
 
 ##################### Feature ##########################
 feature:
-  enable : true
+  enable : false
   title : "What Project Radius offers application teams"
   feature_item:
     # feature item loop
@@ -65,15 +65,25 @@ service:
         label : "Learn more"
         link : "https://docs.radapp.dev/administrator-guides/platforms"
 
-    # Recipes
-    - title : "Automate infrastructure<br />provisioning with Recipes"
+    # App Graph
+    - title : "Leverage the Radius<br />application graph"
       images:
-      - "images/recipes.png"
-      content : "Create reusable templates for infrastructure deployment and configuration that empower developers to quickly build applications that comply with operational and security guidelines. No more manual ticketing systems or wikis telling developers how to deploy infrastructure."
+      - "images/connections.png"
+      content : "Applications are more than just flat lists of services; they are an interconnected graph of services, databases, gateways, and more. Project Radius allows teams to model, visualize, and automate applications through the new Radius application graph."
       button:
         enable : true
-        label : "Check it out"
-        link : "https://docs.radapp.dev/author-apps/recipes"
+        label : "Learn more"
+        link : "https://docs.radapp.dev/administrator-guides/platforms"
+
+    # Recipes
+    #- title : "Automate infrastructure<br />provisioning with Recipes"
+    #  images:
+    #  - "images/recipes.png"
+    #  content : "Create reusable templates for infrastructure deployment and configuration that empower #developers to quickly build applications that comply with operational and security guidelines. No more #manual ticketing systems or wikis telling developers how to deploy infrastructure."
+    #  button:
+    #    enable : true
+    #    label : "Check it out"
+    #    link : "https://docs.radapp.dev/author-apps/recipes"
         
     # service item loop
     - title : "Built-in Dapr support"
@@ -91,8 +101,6 @@ screenshot:
   title : "Experience the best <br> workflow with us"
   image : "images/screenshot.svg"
 
-  
-
 ##################### Call to action #####################
 call_to_action:
   enable : true
@@ -102,5 +110,5 @@ call_to_action:
   button:
     enable : true
     label : "Get Started"
-    link : "https://docs.radapp.dev/getting-started"
+    link : "https://radapp.dev/getting-started"
 ---
