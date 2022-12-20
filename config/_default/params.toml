@@ -15,7 +15,6 @@ blogCategoryType = "category"
 primary_color = "#25BADC"
 light = "#E3F6FC"
 primary_font = "Ubuntu"
-secondary_font = ""
 
 # Preloader
 [preloader]
