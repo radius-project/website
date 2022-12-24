@@ -48,24 +48,7 @@ feature:
 service:
   enable : true
   service_item:
-    # Portable
-    - title : "Build apps that are portable<br />across clouds and on-prem"
-      images:
-      - "images/platforms.png"
-      content : "Project Radius makes it easy to build and operate applications on Azure, AWS, and on-premises with pluggable infrastructure. Developers describe their application's requirements (_databases, caching, identity, and more_), and operators bind apps to platforms leveraging Radius environments."
-      button:
-        enable : true
-        label : "Learn more"
-        link : "https://docs.radapp.dev/administrator-guides/platforms"
-
-    # Tooling
-    - title : "Ensure your apps meet<br />your org's requirements"
-      video:
-        enable: true
-        url: "https://microsoft.sharepoint.com/teams/radius/_layouts/15/embed.aspx?uniqueID=13a468f0-85a9-44a6-8113-17e4bae571b5"
-      content : "We believe that developers and IT ops teams need better tools to work with each other. It's too hard for ops to ensure apps meet operational requirements for excellence and security. It's even harder for developers to know their apps are meeting those requirements, without having to become experts in the underlying platforms. We're here to help with consistent tooling across all your clouds and environments."
-
-    # App Graph
+    #  App Graph
     - title : "Leverage the Radius<br />application graph"
       images:
       - "images/connections.png"
@@ -74,6 +57,23 @@ service:
         enable : true
         label : "Learn more"
         link : "https://docs.radapp.dev/concepts/appmodel-concept/"
+    
+    # Portable
+    - title : "Build apps that are portable<br />across clouds and on-prem"
+      images:
+      - "images/platforms.png"
+      content : "Project Radius makes it easy to build and operate applications on Azure, AWS, and on-premises with pluggable infrastructure and consistent tooling. Developers describe their application's requirements (_databases, caching, identity, and more_), and operators bind apps to platforms leveraging Radius environments."
+      button:
+        enable : true
+        label : "Learn more"
+        link : "https://docs.radapp.dev/operations/platforms"
+
+    # Tooling
+    - title : "Ensure your apps meet<br />your org's requirements"
+      video:
+        enable: true
+        url: "https://microsoft.sharepoint.com/teams/radius/_layouts/15/embed.aspx?uniqueID=13a468f0-85a9-44a6-8113-17e4bae571b5"
+      content : "We believe that developers and IT ops teams need better tools to work with each other. It's too hard for ops to ensure apps meet operational requirements for excellence and security. It's even harder for developers to know their apps are meeting those requirements, without having to become experts in the underlying platforms. We're here to help with a new application-focused experience with consistent tooling across all your clouds and platforms."
 
     # Recipes
     #- title : "Automate infrastructure<br />provisioning with Recipes"
