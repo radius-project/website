@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://website.radapp.dev/"
+baseURL = "https://radapp.dev/"
 title = "Project Radius"
 theme = "bigspring-light"
 disableFastRender = true
