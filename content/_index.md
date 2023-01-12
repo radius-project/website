@@ -59,7 +59,7 @@ service:
     - title : "Build apps that are portable across clouds and on-prem"
       images:
       - "images/platforms.png"
-      content : "Project Radius makes it easy to build and operate applications on Azure, AWS, and on-premises with pluggable infrastructure. Developers describe their application's requirements (_databases, caching, identity, and more_), and operators bind apps to platforms leveraging Radius environments."
+      content : "Project Radius makes it easy to build and operate applications on any cloud (_Azure, AWS,and more_), and on-premises with pluggable infrastructure. Developers describe their application's requirements (_databases, caching, identity, and more_), and operators bind apps to platforms leveraging Radius environments."
       button:
         enable : true
         label : "Learn more"
