@@ -34,41 +34,29 @@ jobs:
           fi
           hugo ${STAGING_URL+-b "$STAGING_URL"}
       - name: Upload Hugo artifacts
-        uses: actions/upload-artifact@master
+        uses: actions/upload-artifact@v3
         with:
           name: hugo_build
           path: ./public/
           if-no-files-found: error
   
   deploy:
-    name: Deploy Website
+    name: Deploy Hugo Website
+    if: github.event_name == 'push'
     needs: ['build']
     runs-on: ubuntu-latest
+    environment:
+      name: latest
+      url: https://radapp.dev
     steps:
       - name: Download Hugo artifacts
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: hugo_build
           path: site/
-      - name: Deploy staging site
-        uses: Azure/static-web-apps-deploy@v1
+      - name: Deploy to WebApp
+        uses: Azure/webapps-deploy@v2
         with:
-          azure_static_web_apps_api_token: ${{ secrets.WEBSITE_SITE_TOKEN }}
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-          action: "upload"
-          app_location: "site/"
-          api_location: "site/" 
-          output_location: ""
-          skip_app_build: true
-
-  close:
-    name: Close PR Staging Site
-    if: github.event_name == 'pull_request' && github.event.action == 'closed'
-    runs-on: ubuntu-latest
-    steps:
-      - name: Close Pull Request
-        id: closepullrequest
-        uses: Azure/static-web-apps-deploy@v1
-        with:
-          azure_static_web_apps_api_token: ${{ secrets.WEBSITE_SITE_TOKEN }}
-          action: "close"
+          app-name: ${{ secrets.ENV_APPSERVICE_NAME }}
+          publish-profile: ${{ secrets.ENV_APPSERVICE_PUBLISHPROFILE }}
+          package: site/

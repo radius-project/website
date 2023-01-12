@@ -1,6 +1,7 @@
 #################### default parameters ################################
 logo = "images/logo.png"
 logo_width = "200px"
+favicon = "favicon.ico"
 # OpenGraph / Twitter Card metadata
 description = "Project Radius is a cloud-native, portable, application platform"
 author = "Project Radius Core Team"
@@ -14,6 +15,7 @@ blogCategoryType = "category"
 [variables]
 primary_color = "#25BADC"
 light = "#E3F6FC"
+primary_font = "Ubuntu"
 
 # Preloader
 [preloader]
@@ -34,22 +36,22 @@ content = "This site uses cookies. By continuing to use this website, you agree 
 button = "I Accept"
   
 ############################# social site ########################
-[[social]]
-title = "facebook"
-icon = "fab fa-facebook" # themify icon : https://themify.me/themify-icons
-link = "#"
-
-[[social]]
-title = "twitter"
-icon = "fab fa-twitter" # themify icon : https://themify.me/themify-icons
-link = "#"
-
-[[social]]
-title = "skype"
-icon = "fab fa-skype" # themify icon : https://themify.me/themify-icons
-link = "#"
-
-[[social]]
-title = "linkedin"
-icon = "fab fa-linkedin" # themify icon : https://themify.me/themify-icons
-link = "#"
+# [[social]]
+# title = "facebook"
+# icon = "fab fa-facebook" # themify icon : https://themify.me/themify-icons
+# link = "#"
+# 
+# [[social]]
+# title = "twitter"
+# icon = "fab fa-twitter" # themify icon : https://themify.me/themify-icons
+# link = "#"
+# 
+# [[social]]
+# title = "skype"
+# icon = "fab fa-skype" # themify icon : https://themify.me/themify-icons
+# link = "#"
+# 
+# [[social]]
+# title = "linkedin"
+# icon = "fab fa-linkedin" # themify icon : https://themify.me/themify-icons
+# link = "#"
