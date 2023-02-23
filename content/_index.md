@@ -76,14 +76,14 @@ service:
       content : "We believe that developers and IT ops teams need better tools to work with each other. It's too hard for ops to ensure apps meet operational requirements for excellence and security. It's even harder for developers to know their apps are meeting those requirements, without having to become experts in the underlying platforms. We're here to help with a new application-focused experience with consistent tooling across all your clouds and platforms."
 
     # Recipes
-    #- title : "Automate infrastructure<br />provisioning with Recipes"
-    #  images:
-    #  - "images/recipes.png"
-    #  content : "Create reusable templates for infrastructure deployment and configuration that empower #developers to quickly build applications that comply with operational and security guidelines. No more #manual ticketing systems or wikis telling developers how to deploy infrastructure."
-    #  button:
-    #    enable : true
-    #    label : "Check it out"
-    #    link : "https://docs.radapp.dev/author-apps/recipes"
+    - title : "Automate infrastructure<br />provisioning with Recipes"
+      images:
+      - "images/recipes.png"
+      content : "Create reusable templates for infrastructure deployment and configuration that empower developers to quickly build applications that comply with operational and security guidelines. No more manual ticketing systems or wikis instructing developers how to deploy infrastructure."
+      button:
+        enable : true
+        label : "Check it out"
+        link : "https://docs.radapp.dev/author-apps/recipes"
         
     # service item loop
     - title : "Built-in Dapr support"
