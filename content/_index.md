@@ -52,7 +52,7 @@ service:
     - title : "Leverage the Radius<br />application graph"
       images:
       - "images/connections.png"
-      content : "Applications are more than just flat lists of services; they are an interconnected graph of services, databases, gateways, and more. Project Radius allows teams to model, visualize, and automate applications through the new Radius application graph."
+      content : "Applications are more than just flat lists of resources; they are an interconnected graph of services, databases, gateways, and more. Project Radius allows teams to model, visualize, and automate applications through the new Radius application graph."
       button:
         enable : true
         label : "Learn more"
