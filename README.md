@@ -1,4 +1,4 @@
-# Project Radius Website
+# Radius Website
 
 [![Project Radius Website](https://github.com/project-radius/website/actions/workflows/main.yml/badge.svg)](https://github.com/project-radius/website/actions/workflows/main.yml)
 
@@ -18,4 +18,8 @@ This repository contains the source code for the Project Radius website, availab
    ```bash
    hugo server
    ```
-4. Open a browser to http://localhost:1313
+1. Open a browser to http://localhost:1313
+
+## Code of Conduct
+
+Please refer to our [Radius Community Code of Conduct](https://github.com/project-radius/radius/blob/main/CODE-OF-CONDUCT.md)
