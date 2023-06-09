@@ -1,6 +1,6 @@
 ######################## default configuration ####################
 baseURL = "https://radapp.dev/"
-title = "Project Radius"
+title = "Radius"
 theme = "bigspring-light"
 disableFastRender = true
 # post pagination
