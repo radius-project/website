@@ -1,7 +1,7 @@
 ############################# English ############################
 [en]
 languageName = "En"
-title = "Project Radius"
+title = "Radius"
 contentDir = "content"
 weight = 1
 ########### footer content ##########
@@ -10,4 +10,4 @@ footer_menu_middle = "Product"
 footer_menu_right = "Support"
 footer_content = "Brought to you by the Azure Incubations team"
 # copyright
-copyright = "© Project Radius Authors"
+copyright = "© Radius Authors"

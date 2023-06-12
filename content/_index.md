@@ -12,7 +12,7 @@ banner:
 ##################### Feature ##########################
 feature:
   enable : false
-  title : "What Project Radius offers application teams"
+  title : "What Radius offers application teams"
   feature_item:
     # feature item loop
     - name : "App-centric Experiences"
@@ -52,7 +52,7 @@ service:
     - title : "Leverage the Radius<br />application graph"
       images:
       - "images/connections.png"
-      content : "Applications are more than just flat lists of resources; they are an interconnected graph of services, databases, gateways, and more. Project Radius allows teams to model, visualize, and automate applications through the new Radius application graph."
+      content : "Applications are more than just flat lists of resources; they are an interconnected graph of services, databases, gateways, and more. Radius allows teams to model, visualize, and automate applications through the new Radius application graph."
       button:
         enable : true
         label : "Learn more"
@@ -62,7 +62,7 @@ service:
     - title : "Build apps that are portable<br />across clouds and on-prem"
       images:
       - "images/platforms.png"
-      content : "Project Radius makes it easy to build and operate applications across cloud (_Azure, AWS, and more_) and on-premises with pluggable infrastructure and consistent tooling. Developers describe their application's requirements (_databases, caching, identity, and more_), and operators bind apps to platforms leveraging Radius environments."
+      content : "Radius makes it easy to build and operate applications across cloud (_Azure, AWS, and more_) and on-premises with pluggable infrastructure and consistent tooling. Developers describe their application's requirements (_databases, caching, identity, and more_), and operators bind apps to platforms leveraging Radius environments."
       button:
         enable : true
         label : "Learn more"
@@ -106,7 +106,7 @@ call_to_action:
   enable : true
   title : "Ready to get started?"
   image : "images/tools.png"
-  content : "Visit the Project Radius getting started guide to learn more and begin rad-ifying your first application today."
+  content : "Visit the Radius getting started guide to learn more and begin rad-ifying your first application today."
   button:
     enable : true
     label : "Get Started"
