@@ -11,7 +11,7 @@ weight = 2
 
 [[main]]
 name = "GitHub"
-url = "https://github.com/project-radius"
+url = "https://github.com/radius-project"
 weight = 3
 
 [[main]]
