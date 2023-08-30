@@ -1,6 +1,6 @@
 # Radius
 
-[![Radius Website](https://github.com/project-radius/website/actions/workflows/main.yml/badge.svg)](https://github.com/project-radius/website/actions/workflows/main.yml)
+[![Radius Website](https://github.com/radius-project/website/actions/workflows/main.yml/badge.svg)](https://github.com/radius-project/website/actions/workflows/main.yml)
 
 This repository contains the source code for the Radius website, available at https://radapp.dev.
 
@@ -11,7 +11,7 @@ This repository contains the source code for the Radius website, available at ht
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/project-radius/website.git
+   git clone https://github.com/radius-project/website.git
    cd website
    ```
 1. Run the development server
@@ -22,4 +22,4 @@ This repository contains the source code for the Radius website, available at ht
 
 ## Code of Conduct
 
-Please refer to our [Radius Community Code of Conduct](https://github.com/project-radius/radius/blob/main/CODE-OF-CONDUCT.md)
+Please refer to our [Radius Community Code of Conduct](https://github.com/radius-project/radius/blob/main/CODE-OF-CONDUCT.md)
