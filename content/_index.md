@@ -1,7 +1,7 @@
 ---
 ####################### Banner #########################
 banner:
-  title : "Cloud-native applications<br />are more than just Kubernetes"
+  title : "TESTCloud-native applications<br />are more than just Kubernetes"
   image : "images/app-blocks.gif"
   content : "Kubernetes is great, but cloud-native applications are so much more.<br />You deserve a platform that can describe, deploy, and manage your entire app."
   button:
