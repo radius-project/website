@@ -53,13 +53,13 @@ jobs:
         with:
           name: hugo_build
           path: site/
-      - name: Deploy staging site
+      - name: Deploy static web app
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.SWA_TOKEN }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
-          app_location: "/"
-          api_location: "api/" 
+          app_location: "site/"
+          api_location: "site/" 
           output_location: ""
           skip_app_build: true
