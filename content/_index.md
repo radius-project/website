@@ -7,7 +7,7 @@ banner:
   button:
     enable : false
     label : "Learn More"
-    link : "https://radapp.dev/concepts/overview/"
+    link : "https://radapp.io/concepts/"
 
 ##################### Feature ##########################
 feature:
@@ -66,7 +66,7 @@ service:
       button:
         enable : true
         label : "Learn more"
-        link : "https://docs.radapp.dev/operations/platforms"
+        link : "https://docs.radapp.dev/operations/kubernetes"
 
     # Tooling
     - title : "Ensure your apps meet<br />your org's requirements"
@@ -83,7 +83,7 @@ service:
       button:
         enable : true
         label : "Check it out"
-        link : "https://docs.radapp.dev/author-apps/recipes"
+        link : "https://docs.radapp.io/recipes"
         
     # service item loop
     - title : "Built-in Dapr support"
@@ -93,7 +93,7 @@ service:
       button:
         enable : true
         label : "Learn More"
-        link : "https://docs.radapp.dev/author-apps/dapr"
+        link : "https://docs.radapp.io/author-apps/dapr"
         
 ################### Screenshot ########################
 screenshot:
@@ -110,5 +110,5 @@ call_to_action:
   button:
     enable : true
     label : "Get Started"
-    link : "https://docs.radapp.dev/getting-started"
+    link : "https://docs.radapp.io/getting-started"
 ---

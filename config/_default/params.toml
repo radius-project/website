@@ -46,10 +46,10 @@ button = "I Accept"
 # icon = "fab fa-twitter" # themify icon : https://themify.me/themify-icons
 # link = "#"
 # 
-# [[social]]
-# title = "skype"
-# icon = "fab fa-skype" # themify icon : https://themify.me/themify-icons
-# link = "#"
+[[social]]
+title = "GitHub"
+icon = "fab fa-github" # themify icon : https://themify.me/themify-icons
+link = "https://github.com/radius-project/radius"
 # 
 # [[social]]
 # title = "linkedin"

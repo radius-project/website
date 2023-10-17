@@ -6,7 +6,7 @@ weight = 1
 
 [[main]]
 name = "Docs"
-url = "https://docs.radapp.dev"
+url = "https://docs.radapp.io"
 weight = 2
 
 [[main]]
@@ -16,17 +16,18 @@ weight = 3
 
 [[main]]
 name = "Community"
-url = "https://aka.ms/ProjectRadius"
+url = "https://github.com/radius-project/community"
 weight = 4
 
 # footer menu left
-# [[footer_left]]
-# name = "Concepts"
-# url = "https://docs.radapp.dev/concepts/"
+[[footer_left]]
+name = "GitHub"
+url = "https://github.com/radius-project/community"
+icon = "fab fa-github"
 
-# [[footer_left]]
-# name = "Developer Guides"
-# url = "https://docs.radapp.dev/author-apps/"
+[[footer_left]]
+name = "Discord"
+url = "https://aka.ms/Radius/Discord"
 
 # [[footer_left]]
 # name = "Administrator Guides"
