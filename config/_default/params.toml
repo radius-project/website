@@ -4,7 +4,7 @@ logo_width = "200px"
 favicon = "favicon.ico"
 # OpenGraph / Twitter Card metadata
 description = "Radius is a cloud-native, portable, application platform"
-author = "Radius Core Team"
+author = "Radius Project Leads"
 image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
 # contact form action
 contact_form_action = "#" # contact form works with https://formspree.io
@@ -13,8 +13,8 @@ contact_form_action = "#" # contact form works with https://formspree.io
 blogCategoryType = "category"
 
 [variables]
-primary_color = "#25BADC"
-light = "#E3F6FC"
+primary_color = "#c43821"
+light = "#f5f5f5"
 primary_font = "Ubuntu"
 
 # Preloader
@@ -26,7 +26,7 @@ preloader = "" # use jpg, png, svg or gif format.
 [navigation_button]
 enable = true
 label = "Get Started"
-link = "https://docs.radapp.dev/getting-started"
+link = "https://docs.radapp.io/getting-started"
 
 # cookies
 [cookies]
