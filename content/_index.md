@@ -21,17 +21,19 @@ service:
     # Application Graph
     - title : "Application Graph"
       images:
-      - "images/platforms.png"
+      - "images/connections.png"
       content : "Radius binds an application to its dependent infrastructure, which enables Radius to provide (construct?) an application graph that shows precisely how the application and infrastructure are interconnected.  This graph enables team members to view and intuitively understand what makes up an application."
 
     # Cloud neutral
     - title : "Cloud neutral"
+      images:
+      - "images/platforms.png"
       content : "Many enterprises are multi-cloud and want solutions that work well not on just Azure, but on other clouds, as well as on-premises.  So, Radius is open-source and multi-cloud from the start. With Radius, you can deploy across development environments, on-premises infrastructure and your public clouds of choice, with a single, consistent tooling experience."
 
     # Meet Customers where they are
     - title : "Meet Customers where they are"
       images:
-      - ""
+      - "images/platforms.png"
       content : "Radius meets application teams where they are by supporting proven technologies like Kubernetes, existing infrastructure tools including Terraform and Bicep and by integrating with existing CI/CD systems like GitHub Actions. Radius supports multi-tier web-plus-data to complex microservice applications like eShop, a popular cloud reference application from Microsoft."
         
 ################### Screenshot ########################
