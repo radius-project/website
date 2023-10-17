@@ -1,9 +1,9 @@
 ---
 ####################### Banner #########################
 banner:
-  title : "Cloud-native applications<br />are more than just Kubernetes"
+  title : "Developer and Operator Collaboration "
   image : "images/app-blocks.gif"
-  content : "Kubernetes is great, but cloud-native applications are so much more.<br />You deserve a platform that can describe, deploy, and manage your entire app."
+  content : "Radius is a cloud-native application platform that enables developers and the operators / platform engineers that support them to collaborate on delivering and managing cloud-native applications that follow corporate best practices for cost, operations and security, by default."
   button:
     enable : false
     label : "Learn More"
@@ -48,52 +48,27 @@ feature:
 service:
   enable : true
   service_item:
-    #  App Graph
-    - title : "Leverage the Radius<br />application graph"
-      images:
-      - "images/connections.png"
-      content : "Applications are more than just flat lists of resources; they are an interconnected graph of services, databases, gateways, and more. Radius allows teams to model, visualize, and automate applications through the new Radius application graph."
-      button:
-        enable : true
-        label : "Learn more"
-        link : "https://docs.radapp.dev/concepts/appmodel-concept/"
-    
-    # Portable
-    - title : "Build apps that are portable<br />across clouds and on-prem"
-      images:
-      - "images/platforms.png"
-      content : "Radius makes it easy to build and operate applications across cloud (_Azure, AWS, and more_) and on-premises with pluggable infrastructure and consistent tooling. Developers describe their application's requirements (_databases, caching, identity, and more_), and operators bind apps to platforms leveraging Radius environments."
-      button:
-        enable : true
-        label : "Learn more"
-        link : "https://docs.radapp.dev/operations/kubernetes"
-
-    # Tooling
-    - title : "Ensure your apps meet<br />your org's requirements"
-      video:
-        enable: true
-        url: "https://microsoft.sharepoint.com/teams/radius/_layouts/15/embed.aspx?uniqueID=13a468f0-85a9-44a6-8113-17e4bae571b5"
-      content : "We believe that developers and IT ops teams need better tools to work with each other. It's too hard for ops to ensure apps meet operational requirements for excellence and security. It's even harder for developers to know their apps are meeting those requirements, without having to become experts in the underlying platforms. We're here to help with a new application-focused experience with consistent tooling across all your clouds and platforms."
-
-    # Recipes
-    - title : "Automate infrastructure<br />provisioning with Recipes"
+    #  Environments and Recipes
+    - title : "Environments and Recipes"
       images:
       - "images/recipes.png"
-      content : "Create reusable templates for infrastructure deployment and configuration that empower developers to quickly build applications that comply with operational and security guidelines. No more manual ticketing systems or wikis instructing developers how to deploy infrastructure."
-      button:
-        enable : true
-        label : "Check it out"
-        link : "https://docs.radapp.io/recipes"
-        
-    # service item loop
-    - title : "Built-in Dapr support"
+      content : "Radius ensures the cloud infrastructure used by applications meets cost, operations, and security requirements. These requirements are captured in recipes, which are tied to the environment where a given application will be deployed and managed.  Environments and Recipes are defined by the IT operators, platform engineers, and/or security engineers that support cloud native developers."
+     
+    # Application Graph
+    - title : "Application Graph"
       images:
-      - "images/dapr-buildingblocks.png"
-      content : "Developers can leverage built-in support for [Dapr building blocks](https://dapr.io) such as state stores, pub/sub brokers, and more. When deployed, Radius binds the building blocks to supported infrastructure such as Azure Service Bus or AWS SQS, which operators can select and configure. All of your Dapr component configs and advanced security configuration is deployed and managed for you automatically."
-      button:
-        enable : true
-        label : "Learn More"
-        link : "https://docs.radapp.io/author-apps/dapr"
+      - "images/platforms.png"
+      content : "Radius binds an application to its dependent infrastructure, which enables Radius to provide (construct?) an application graph that shows precisely how the application and infrastructure are interconnected.  This graph enables team members to view and intuitively understand what makes up an application."
+
+    # Cloud neutral
+    - title : "Cloud neutral"
+      content : "Many enterprises are multi-cloud and want solutions that work well not on just Azure, but on other clouds, as well as on-premises.  So, Radius is open-source and multi-cloud from the start. With Radius, you can deploy across development environments, on-premises infrastructure and your public clouds of choice, with a single, consistent tooling experience."
+
+    # Meet Customers where they are
+    - title : "Meet Customers where they are"
+      images:
+      - ""
+      content : "Radius meets application teams where they are by supporting proven technologies like Kubernetes, existing infrastructure tools including Terraform and Bicep and by integrating with existing CI/CD systems like GitHub Actions. Radius supports multi-tier web-plus-data to complex microservice applications like eShop, a popular cloud reference application from Microsoft."
         
 ################### Screenshot ########################
 screenshot:
