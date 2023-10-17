@@ -32,8 +32,6 @@ service:
 
     # Meet Customers where they are
     - title : "Meet Customers where they are"
-      images:
-      - "images/platforms.png"
       content : "Radius meets application teams where they are by supporting proven technologies like Kubernetes, existing infrastructure tools including Terraform and Bicep and by integrating with existing CI/CD systems like GitHub Actions. Radius supports multi-tier web-plus-data to complex microservice applications like eShop, a popular cloud reference application from Microsoft."
         
 ################### Screenshot ########################
