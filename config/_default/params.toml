@@ -36,22 +36,22 @@ content = "This site uses cookies. By continuing to use this website, you agree 
 button = "I Accept"
   
 ############################# social site ########################
-# [[social]]
-# title = "facebook"
-# icon = "fab fa-facebook" # themify icon : https://themify.me/themify-icons
-# link = "#"
-# 
-# [[social]]
-# title = "twitter"
-# icon = "fab fa-twitter" # themify icon : https://themify.me/themify-icons
-# link = "#"
-# 
+[[social]]
+title = "Threads"
+icon = "fab fa-instagram" # themify icon : https://themify.me/themify-icons
+link = "https://www.threads.net/@radapp_io"
+
+[[social]]
+title = "X"
+icon = "fab fa-twitter" # themify icon : https://themify.me/themify-icons
+link = "https://twitter.com/radapp_io"
+
 [[social]]
 title = "GitHub"
 icon = "fab fa-github" # themify icon : https://themify.me/themify-icons
 link = "https://github.com/radius-project/radius"
-# 
-# [[social]]
-# title = "linkedin"
-# icon = "fab fa-linkedin" # themify icon : https://themify.me/themify-icons
-# link = "#"
+
+[[social]]
+title = "YouTube"
+icon = "fab fa-youtube" # themify icon : https://themify.me/themify-icons
+link = "https://www.youtube.com/@radapp_io"

@@ -1,114 +1,109 @@
 ---
 ####################### Banner #########################
 banner:
-  title : "Cloud-native applications<br />are more than just Kubernetes"
-  image : "images/app-blocks.gif"
-  content : "Kubernetes is great, but cloud-native applications are so much more.<br />You deserve a platform that can describe, deploy, and manage your entire app."
+  title: "Cloud-native applications<br />are more than just Kubernetes"
+  image: "images/app-blocks.gif"
+  content: "Radius is an open-source, cloud-native, application platform that enables developers and the operators that support them to define, deploy, and collaborate on cloud-native applications across public clouds and private infrastructure"
   button:
-    enable : false
-    label : "Learn More"
-    link : "https://radapp.io/concepts/"
+    enable: false
+    label: "Learn More"
+    link: "https://radapp.io/concepts/"
 
 ##################### Feature ##########################
 feature:
-  enable : false
-  title : "What Radius offers application teams"
+  enable: false
+  title: "What Radius offers application teams"
   feature_item:
     # feature item loop
-    - name : "App-centric Experiences"
-      icon : "fas fa-window-maximize"
-      content : "Developers can focus on their applications instead of underlying platform infrastructure"
+    - name: "App-centric Experiences"
+      icon: "fas fa-window-maximize"
+      content: "Developers can focus on their applications instead of underlying platform infrastructure"
       
     # feature item loop
-    - name : "Abstracted Runtimes"
-      icon : "fas fa-layer-group"
-      content : "Developers don't need to learn Kubernetes. Instead they describe their app's requirements"
+    - name: "Abstracted Runtimes"
+      icon: "fas fa-layer-group"
+      content: "Developers don't need to learn Kubernetes. Instead they describe their app's requirements"
 
     # feature item loop
-    - name : "Separation of Concerns"
-      icon : "fas fa-people-arrows"
-      content : "Developers focus on their apps while operators focus on environments and infrastructure"
+    - name: "Separation of Concerns"
+      icon: "fas fa-people-arrows"
+      content: "Developers focus on their apps while operators focus on environments and infrastructure"
       
     # feature item loop
-    - name : "App Portability"
-      icon : "fas fa-share-from-square"
-      content : "Deploy your application across clouds and on-premises with zero app rewrites"
+    - name: "App Portability"
+      icon: "fas fa-share-from-square"
+      content: "Deploy your application across clouds and on-premises with zero app rewrites"
       
     # feature item loop
-    - name : "Consistent Tooling"
-      icon : "fas fa-screwdriver-wrench"
-      content : "Developers and operators can deploy, manage, and visualize applications with common tools"
+    - name: "Consistent Tooling"
+      icon: "fas fa-screwdriver-wrench"
+      content: "Developers and operators can deploy, manage, and visualize applications with common tools"
       
     # feature item loop
-    - name : "Automated & Secure"
-      icon : "fas fa-file-shield"
-      content : "Operators can define and enforce organization best practices across applications"
+    - name: "Automated & Secure"
+      icon: "fas fa-file-shield"
+      content: "Operators can define and enforce organization best practices across applications"
 
 ######################### Service #####################
 service:
-  enable : true
+  enable: true
   service_item:
-    #  App Graph
-    - title : "Leverage the Radius<br />application graph"
+    # Developer + Operator Collaboration
+    - title: "Developer + Operator Collaboration"
+      images:
+      - "images/collaboration.png"
+      content: "Developers define Applications and their dependencies, not the underlying infrastructure. Operators define Environments with platform configuration, infrastructure, and policies that enforce their organization's requirements. Radius brings them together, deploying applications and infrastructure that meet both developer and operator requirements."
+      button:
+        enable: false
+        label: "Learn More"
+        link: "https://docs.radapp.io/concepts/application-graph"
+
+    # Application Graph
+    - title: "Application Graph"
       images:
       - "images/connections.png"
-      content : "Applications are more than just flat lists of resources; they are an interconnected graph of services, databases, gateways, and more. Radius allows teams to model, visualize, and automate applications through the new Radius application graph."
+      content: "Graphs are better than lists. Instead of managing endless lists of infrastructure and resources, Radius Applications capture the relationships and dependencies within an app. This graph can be used to both deploy and understand the application."
       button:
-        enable : true
-        label : "Learn more"
-        link : "https://docs.radapp.dev/concepts/appmodel-concept/"
-    
-    # Portable
-    - title : "Build apps that are portable<br />across clouds and on-prem"
-      images:
-      - "images/platforms.png"
-      content : "Radius makes it easy to build and operate applications across cloud (_Azure, AWS, and more_) and on-premises with pluggable infrastructure and consistent tooling. Developers describe their application's requirements (_databases, caching, identity, and more_), and operators bind apps to platforms leveraging Radius environments."
-      button:
-        enable : true
-        label : "Learn more"
-        link : "https://docs.radapp.dev/operations/kubernetes"
-
-    # Tooling
-    - title : "Ensure your apps meet<br />your org's requirements"
-      video:
-        enable: true
-        url: "https://microsoft.sharepoint.com/teams/radius/_layouts/15/embed.aspx?uniqueID=13a468f0-85a9-44a6-8113-17e4bae571b5"
-      content : "We believe that developers and IT ops teams need better tools to work with each other. It's too hard for ops to ensure apps meet operational requirements for excellence and security. It's even harder for developers to know their apps are meeting those requirements, without having to become experts in the underlying platforms. We're here to help with a new application-focused experience with consistent tooling across all your clouds and platforms."
-
-    # Recipes
-    - title : "Automate infrastructure<br />provisioning with Recipes"
+        enable: false
+        label: "Learn More"
+        link: "https://docs.radapp.io/concepts/application-graph"
+      
+    #  Environments and Recipes
+    - title: "Infrastructure Recipes"
       images:
       - "images/recipes.png"
-      content : "Create reusable templates for infrastructure deployment and configuration that empower developers to quickly build applications that comply with operational and security guidelines. No more manual ticketing systems or wikis instructing developers how to deploy infrastructure."
+      content: "Developers shouldn't need to be infrastructure experts. Recipes allow IT operators to define infrastructure-as-code templates used to deploy an application's infrastructure, while guaranteeing it meets cost, operations, and security requirements. Developers just focus on application requirements, not the underlying infrastructure."
       button:
-        enable : true
-        label : "Check it out"
-        link : "https://docs.radapp.io/recipes"
-        
-    # service item loop
-    - title : "Built-in Dapr support"
+        enable: true
+        label: "Learn More"
+        link: "https://docs.radapp.io/guides/recipes/overview"
+
+    # Cloud neutral
+    - title: "Cloud Neutral"
       images:
-      - "images/dapr-buildingblocks.png"
-      content : "Developers can leverage built-in support for [Dapr building blocks](https://dapr.io) such as state stores, pub/sub brokers, and more. When deployed, Radius binds the building blocks to supported infrastructure such as Azure Service Bus or AWS SQS, which operators can select and configure. All of your Dapr component configs and advanced security configuration is deployed and managed for you automatically."
-      button:
-        enable : true
-        label : "Learn More"
-        link : "https://docs.radapp.io/author-apps/dapr"
+      - "images/platforms.png"
+      content: "Teams want tools and solutions that don't lock them into a specific cloud or platform. Radius is open-source and multi-cloud from the start. With Radius, you can deploy across development environments, on-premises infrastructure, and your public clouds of choice, with a single, consistent tooling experience."
+
+    # Meet Customers where they are
+    - title: "Leverage Existing Tools"
+      images:
+      - "images/tooling.png"
+      content: "Radius meets application teams where they are by supporting proven technologies like Kubernetes, existing infrastructure tools including Terraform and Bicep, and by integrating with existing CI/CD systems like GitHub Actions and Azure DevOps Pipelines."
         
 ################### Screenshot ########################
 screenshot:
-  enable : false
-  title : "Experience the best <br> workflow with us"
-  image : "images/screenshot.svg"
+  enable: false
+  title: "Experience the best <br> workflow with us"
+  image: "images/screenshot.svg"
 
 ##################### Call to action #####################
 call_to_action:
-  enable : true
-  title : "Ready to get started?"
-  image : "images/tools.png"
-  content : "Visit the Radius getting started guide to learn more and begin rad-ifying your first application today."
+  enable: true
+  title: "Ready to get started?"
+  image: "images/tools.png"
+  content: "Visit the Radius getting started guide to learn more and begin rad-ifying your first application today."
   button:
-    enable : true
-    label : "Get Started"
-    link : "https://docs.radapp.io/getting-started"
+    enable: true
+    label: "Get Started"
+    link: "https://docs.radapp.io/getting-started"
 ---
