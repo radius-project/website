@@ -3,7 +3,7 @@
 banner:
   title: "Cloud-native applications<br />are more than just Kubernetes"
   image: "images/app-blocks.gif"
-  content: "Radius is a cloud-native application platform that enables developers and the operators that support them to define, deploy, and collaborate on cloud-native applications across clouds"
+  content: "Radius is an open-source, cloud-native, application platform that enables developers and the operators that support them to define, deploy, and collaborate on cloud-native applications across public clouds and private infrastructure"
   button:
     enable: false
     label: "Learn More"
@@ -52,7 +52,7 @@ service:
     - title: "Developer + Operator Collaboration"
       images:
       - "images/collaboration.png"
-      content: "Developers can define Applications that allow them to describe their application's requirements, not the underlying infrastructure. Operators can leverage Environments to define the platform, infrastructure, and policies that meet their organization's requirements. Radius brings them together at deploy time to ensure that applications are deployed in a way that meets both developer and operator requirements."
+      content: "Developers define Applications and their dependencies, not the underlying infrastructure. Operators define Environments with platform configuration, infrastructure, and policies that enforce their organization's requirements. Radius brings them together, deploying applications and infrastructure that meet both developer and operator requirements."
       button:
         enable: false
         label: "Learn More"
@@ -72,7 +72,7 @@ service:
     - title: "Infrastructure Recipes"
       images:
       - "images/recipes.png"
-      content: "Developers shouldn't need to be experts in their app's underlying infrastructure. Recipes allow IT operators to define the infrastructure-as-code templates that can be used to deploy an application's infrastructure, while guaranteeing that it meets cost, operations, and security requirements. Developers can then focus on their application's requirements, not the underlying infrastructure."
+      content: "Developers shouldn't need to be infrastructure experts. Recipes allow IT operators to define infrastructure-as-code templates used to deploy an application's infrastructure, while guaranteeing it meets cost, operations, and security requirements. Developers just focus on application requirements, not the underlying infrastructure."
       button:
         enable: true
         label: "Learn More"
@@ -82,13 +82,13 @@ service:
     - title: "Cloud Neutral"
       images:
       - "images/platforms.png"
-      content: "Radius is open-source and multi-cloud from the start. With Radius, you can deploy across development environments, on-premises infrastructure, and your public clouds of choice, with a single, consistent tooling experience."
+      content: "Teams want tools and solutions that don't lock them into a specific cloud or platform. Radius is open-source and multi-cloud from the start. With Radius, you can deploy across development environments, on-premises infrastructure, and your public clouds of choice, with a single, consistent tooling experience."
 
     # Meet Customers where they are
     - title: "Leverage Existing Tools"
       images:
       - "images/tooling.png"
-      content: "Radius meets application teams where they are by supporting proven technologies like Kubernetes, existing infrastructure tools including Terraform and Bicep, and by integrating with existing CI/CD systems like GitHub Actions."
+      content: "Radius meets application teams where they are by supporting proven technologies like Kubernetes, existing infrastructure tools including Terraform and Bicep, and by integrating with existing CI/CD systems like GitHub Actions and Azure DevOps Pipelines."
         
 ################### Screenshot ########################
 screenshot:
