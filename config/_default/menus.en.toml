@@ -19,6 +19,11 @@ name = "Community"
 url = "https://github.com/radius-project/community"
 weight = 4
 
+[[main]]
+name = "Blog"
+url = "https://blog.radapp.io"
+weight = 5
+
 # footer menu left
 [[footer_left]]
 name = "GitHub"
