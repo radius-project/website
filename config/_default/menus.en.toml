@@ -10,18 +10,18 @@ url = "https://docs.radapp.io"
 weight = 2
 
 [[main]]
+name = "Blog"
+url = "https://blog.radapp.io"
+weight = 3
+
+[[main]]
 name = "GitHub"
 url = "https://github.com/radius-project"
-weight = 3
+weight = 4
 
 [[main]]
 name = "Community"
 url = "https://github.com/radius-project/community"
-weight = 4
-
-[[main]]
-name = "Blog"
-url = "https://blog.radapp.io"
 weight = 5
 
 # footer menu left
