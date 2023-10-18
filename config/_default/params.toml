@@ -1,7 +1,7 @@
 #################### default parameters ################################
 logo = "images/logo.png"
 logo_width = "200px"
-favicon = "favicon.ico"
+favicon = "favicons/favicon.ico"
 # OpenGraph / Twitter Card metadata
 description = "Radius is a cloud-native, portable, application platform"
 author = "Radius Project Leads"
