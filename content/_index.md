@@ -105,5 +105,5 @@ call_to_action:
   button:
     enable: true
     label: "Get Started"
-    link: "https://docs.radapp.io/getting-started"
+    link: "https://docs.radapp.io/getting-started/"
 ---
