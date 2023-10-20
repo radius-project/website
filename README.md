@@ -2,7 +2,7 @@
 
 [![Radius Website](https://github.com/radius-project/website/actions/workflows/main.yml/badge.svg)](https://github.com/radius-project/website/actions/workflows/main.yml)
 
-This repository contains the source code for the Radius website, available at https://radapp.dev.
+This repository contains the source code for the Radius website, available at https://radapp.io.
 
 ## Contributing
 
