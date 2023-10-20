@@ -1,28 +1,24 @@
 # main menu
-[[main]]
-name = "Home"
-url = "/"
-weight = 1
 
 [[main]]
 name = "Docs"
 url = "https://docs.radapp.io"
-weight = 2
+weight = 1
 
 [[main]]
 name = "Blog"
 url = "https://blog.radapp.io"
-weight = 3
+weight = 2
 
 [[main]]
 name = "GitHub"
 url = "https://github.com/radius-project"
-weight = 4
+weight = 3
 
 [[main]]
 name = "Community"
 url = "https://github.com/radius-project/community"
-weight = 5
+weight = 4
 
 # footer menu left
 [[footer_left]]
