@@ -42,8 +42,8 @@ icon = "fab fa-instagram" # themify icon : https://themify.me/themify-icons
 link = "https://www.threads.net/@radapp_io"
 
 [[social]]
-title = "X"
-icon = "fab fa-twitter" # themify icon : https://themify.me/themify-icons
+title = "X (Twitter)"
+icon = "fab fa-x-twitter" # themify icon : https://themify.me/themify-icons
 link = "https://twitter.com/radapp_io"
 
 [[social]]
