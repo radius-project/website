@@ -38,7 +38,7 @@ button = "I Accept"
 ############################# social site ########################
 [[social]]
 title = "Threads"
-icon = "fab fa-instagram" # themify icon : https://themify.me/themify-icons
+icon = "fab fa-threads" # themify icon : https://themify.me/themify-icons
 link = "https://www.threads.net/@radapp_io"
 
 [[social]]
