@@ -102,9 +102,9 @@ service:
         
 ################### Screenshot ########################
 screenshot:
-  enable: false
-  title: "Experience the best <br> workflow with us"
-  image: "images/screenshot.svg"
+  enable: true
+  title: "Learn more about Radius"
+  youtube: gaG77PiYv5w
 
 ##################### Call to action #####################
 call_to_action:
