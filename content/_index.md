@@ -84,6 +84,16 @@ service:
       - "images/platforms.png"
       content: "Teams want tools and solutions that don't lock them into a specific cloud or platform. Radius is open-source and multi-cloud from the start. With Radius, you can deploy across development environments, on-premises infrastructure, and your public clouds of choice, with a single, consistent tooling experience."
 
+    # Dapr
+    - title: "Dapr + Radius: Better Together"
+      images:
+      - "images/dapr.png"
+      content: "[Dapr](https://dapr.io/) is built into Radius, allowing you to leverage Dapr's powerful microservice building blocks when building cloud-native applications. Developers can add state stores, pub/sub brokers, and more to their app, and Radius' App Graph and Recipes will deploy and manage everything for them. Together, teams can build fully portable applications that can be deployed anywhere."
+      button:
+        enable: true
+        label: "Learn More"
+        link: "https://docs.radapp.io/guides/author-apps/dapr/overview/"
+
     # Meet Customers where they are
     - title: "Leverage Existing Tools"
       images:
