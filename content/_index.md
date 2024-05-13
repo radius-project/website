@@ -106,7 +106,6 @@ screenshot:
   title: "Learn more about Radius"
   youtube: gaG77PiYv5w
 
-
 ##################### Call to action #####################
 call_to_action:
   enable: true
