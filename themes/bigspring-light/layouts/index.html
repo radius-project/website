@@ -166,10 +166,8 @@
 {{ with .Params.cncf }}
 {{ if .enable }}
 <div class="banner text-center">
-  <p>Radius is a <a href="https://www.cncf.io/sandbox-projects/" class="banner-link">Cloud Native Computing Foundation Sandbox project</a></p>
-  <div class="img-container">
-    <img src="./images/cncf.svg" alt="cncf logo" width="500px"/>
-  </div>
+  <h2 class="section-title">{{ .title | markdownify }}</h2>
+  {{with .image}}<img src="{{ . | relURL }}" alt="" class="img-fluid mt-5" width="500px">{{end}}
 {{ end }}
 {{ end }}
 </div> 

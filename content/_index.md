@@ -120,6 +120,6 @@ call_to_action:
 ##################### CNCF ###########################
 cncf:
   enable: true
-  title : "Radius is a Cloud Native Computing Foundation sandbox project."
+  title : "Radius is a [Cloud Native Computing Foundation sandbox project](https://www.cncf.io/sandbox-projects/)."
   image: "images/cncf.svg"
 ---
