@@ -37,7 +37,8 @@
           {{ with site.Params.logo}}
           <img width="{{site.Params.logo_width}}" class="img-fluid" src="{{ . | relURL }}" alt="{{ site.Title }}">
           {{ else }}{{site.Title}}{{end}}
-        </a> <p class="mb-4">{{ site.Params.footer_content | markdownify }}</p>
+        </a> 
+        <p class="mb-4">{{ site.Params.footer_content | markdownify }}</p>
         {{ with site.Params.social }}
         <ul class="list-inline social-icons">
           {{ range . }}
