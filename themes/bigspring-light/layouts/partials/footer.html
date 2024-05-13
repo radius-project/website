@@ -37,8 +37,7 @@
           {{ with site.Params.logo}}
           <img width="{{site.Params.logo_width}}" class="img-fluid" src="{{ . | relURL }}" alt="{{ site.Title }}">
           {{ else }}{{site.Title}}{{end}}
-        </a>
-        <p class="mb-4">{{ site.Params.footer_content | markdownify }}</p>
+        </a> <p class="mb-4">{{ site.Params.footer_content | markdownify }}</p>
         {{ with site.Params.social }}
         <ul class="list-inline social-icons">
           {{ range . }}
@@ -47,10 +46,13 @@
         </ul>
         {{ end }}
       </div>
-    </div>
     {{ end }}
-    <div class="border-top border-default text-center py-4 mt-4">
-      <small class="content">{{ site.Params.Copyright | markdownify }}</small>
+    <div class="text-center footer-info-text">
+      <p>Copyright &copy; 2024, The Radius Authors</p>
+      <p>
+        The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, see
+        <a href="https://www.linuxfoundation.org/legal/trademark-usage" class="footer-link-text">Trademark Usage page.</a>
+      </p>
     </div>
-  </div>
+  </footer>
 </footer>

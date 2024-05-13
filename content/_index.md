@@ -106,6 +106,7 @@ screenshot:
   title: "Learn more about Radius"
   youtube: gaG77PiYv5w
 
+
 ##################### Call to action #####################
 call_to_action:
   enable: true
@@ -116,4 +117,10 @@ call_to_action:
     enable: true
     label: "Get Started"
     link: "https://docs.radapp.io/getting-started/"
+
+##################### CNCF ###########################
+cncf:
+  enable: true
+  title : "Radius is a Cloud Native Computing Foundation sandbox project."
+  image: "images/cncf.svg"
 ---
