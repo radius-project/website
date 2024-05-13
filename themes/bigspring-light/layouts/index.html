@@ -167,10 +167,9 @@
 {{ if .enable }}
 <div class="banner text-center">
   <h2 class="section-title">{{ .title | markdownify }}</h2>
-  {{with .image}}<img src="{{ . | relURL }}" alt="" class="img-fluid mt-5" width="500px">{{end}}
+    {{with .image}}<img src="{{ . | relURL }}" alt="" class="img-fluid" width="500px">{{end}}
 {{ end }}
 {{ end }}
-</div> 
 </div>
 <!-- /CNCF -->
 
