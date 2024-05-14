@@ -116,4 +116,10 @@ call_to_action:
     enable: true
     label: "Get Started"
     link: "https://docs.radapp.io/getting-started/"
+
+##################### CNCF ###########################
+cncf:
+  enable: true
+  title : "Radius is a [Cloud Native Computing Foundation sandbox project](https://www.cncf.io/sandbox-projects/)."
+  image: "images/cncf.svg"
 ---

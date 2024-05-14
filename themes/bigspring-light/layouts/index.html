@@ -162,4 +162,16 @@
 {{ end }}
 <!-- /call to action -->
 
+<!-- CNCF -->
+{{ with .Params.cncf }}
+{{ if .enable }}
+<div class="banner text-center">
+  <h2 class="section-title">{{ .title | markdownify }}</h2>
+    {{with .image}}<img src="{{ . | relURL }}" alt="" class="img-fluid" width="500px">{{end}}
 {{ end }}
+{{ end }}
+</div>
+<!-- /CNCF -->
+
+{{ end }}
+
