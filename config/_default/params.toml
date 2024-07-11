@@ -26,7 +26,7 @@ preloader = "" # use jpg, png, svg or gif format.
 [navigation_button]
 enable = true
 label = "Join our Discord"
-link = "https://aka.ms/Discord"
+link = "https://aka.ms/radius/discord"
 
 # cookies
 [cookies]
