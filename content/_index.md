@@ -5,9 +5,9 @@ banner:
   image: "images/app-blocks.gif"
   content: "Radius is an open-source, cloud-native, application platform that enables developers and the operators that support them to define, deploy, and collaborate on cloud-native applications across public clouds and private infrastructure"
   button:
-    enable: false
-    label: "Learn More"
-    link: "https://radapp.io/concepts/"
+    enable: true
+    label: "Get Started"
+    link: "https://docs.radapp.io/getting-started"
 
 ##################### Feature ##########################
 feature:
