@@ -22,41 +22,27 @@ weight = 4
 
 # footer menu left
 [[footer_left]]
-name = "GitHub"
-url = "https://github.com/radius-project/community"
-icon = "fab fa-github"
+name = "Concepts"
+url = "https://docs.radapp.io/concepts/"
 
 [[footer_left]]
+name = "Getting Started"
+url = "https://docs.radapp.io/getting-started/"
+
+[[footer_left]]
+name = "How-To guides"
+url = "https://docs.radapp.io/guides/"
+
+# footer menu middle
+[[footer_middle]]
+name = "GitHub"
+url = "https://github.com/radius-project/community"
+
+[[footer_middle]]
 name = "Discord"
 url = "https://aka.ms/Radius/Discord"
 
-# [[footer_left]]
-# name = "Administrator Guides"
-# url = "https://radapp.dev/operations/"
-
-
-# footer menu middle
-# [[footer_middle]]
-# name = "Pricing"
-# url = "pricing/"
-
-# [[footer_middle]]
-# name = "Platform"
-# url = "#"
-
-# [[footer_middle]]
-# name = "Features"
-# url = "#"
-
 # footer menu right
-# [[footer_right]]
-# name = "Privacy Policy"
-# url = "privacy-policy/"
-
-# [[footer_right]]
-# name = "Known Limitations"
-# url = "https://docs.radapp.dev/reference/limitations/"
-
-# [[footer_right]]
-# name = "FAQ"
-# url = "https://docs.radapp.dev/reference/faq/"
+[[footer_right]]
+name = "Blogs"
+url = "https://blog.radapp.io/posts"
