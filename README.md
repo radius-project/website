@@ -22,4 +22,4 @@ This repository contains the source code for the Radius website, available at ht
 
 ## Code of Conduct
 
-Please refer to our [Radius Community Code of Conduct](https://github.com/radius-project/radius/blob/main/CODE-OF-CONDUCT.md)
+Please refer to our [Radius Community Code of Conduct](https://github.com/radius-project/community/blob/main/CODE-OF-CONDUCT.md)
