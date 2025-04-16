@@ -6,19 +6,24 @@ url = "https://docs.radapp.io"
 weight = 1
 
 [[main]]
-name = "Blog"
-url = "https://blog.radapp.io/posts"
+name = "GitHub"
+url = "https://github.com/radius-project"
 weight = 2
 
 [[main]]
-name = "GitHub"
-url = "https://github.com/radius-project"
+name = "Blog"
+url = "https://blog.radapp.io/posts"
 weight = 3
 
 [[main]]
 name = "Community"
 url = "https://github.com/radius-project/community"
 weight = 4
+
+[[main]]
+name = "YouTube"
+url = "https://www.youtube.com/@radapp_io"
+weight = 5
 
 # footer menu left
 [[footer_left]]
