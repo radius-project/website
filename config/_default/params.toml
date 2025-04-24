@@ -52,11 +52,6 @@ icon = "fab fa-threads" # themify icon : https://themify.me/themify-icons
 link = "https://www.threads.net/@radapp_io"
 
 [[social]]
-title = "Discord"
-icon = "fab fa-discord" # themify icon : https://themify.me/themify-icons
-link = "https://aka.ms/radius/discord"
-
-[[social]]
 title = "GitHub"
 icon = "fab fa-github" # themify icon : https://themify.me/themify-icons
 link = "https://github.com/radius-project/radius"
