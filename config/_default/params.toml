@@ -37,14 +37,24 @@ button = "I Accept"
   
 ############################# social site ########################
 [[social]]
-title = "Threads"
-icon = "fab fa-threads" # themify icon : https://themify.me/themify-icons
-link = "https://www.threads.net/@radapp_io"
+title = "LinkedIn"
+icon = "fab fa-linkedin-in" # themify icon : https://themify.me/themify-icons
+link = "https://www.linkedin.com/company/radius-project"
 
 [[social]]
 title = "X (Twitter)"
 icon = "fab fa-x-twitter" # themify icon : https://themify.me/themify-icons
 link = "https://twitter.com/radapp_io"
+
+[[social]]
+title = "Threads"
+icon = "fab fa-threads" # themify icon : https://themify.me/themify-icons
+link = "https://www.threads.net/@radapp_io"
+
+[[social]]
+title = "Discord"
+icon = "fab fa-discord" # themify icon : https://themify.me/themify-icons
+link = "https://aka.ms/radius/discord"
 
 [[social]]
 title = "GitHub"
