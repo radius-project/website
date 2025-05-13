@@ -34,7 +34,7 @@ jobs:
           fi
           hugo ${STAGING_URL+-b "$STAGING_URL"}
       - name: Upload Hugo artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: hugo_build
           path: ./public/
