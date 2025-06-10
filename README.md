@@ -1,6 +1,7 @@
 # Radius
 
 [![Radius Website](https://github.com/radius-project/website/actions/workflows/main.yml/badge.svg)](https://github.com/radius-project/website/actions/workflows/main.yml)
+[![License](https://img.shields.io/github/license/radius-project/website)](https://github.com/radius-project/website/blob/main/LICENSE)
 
 This repository contains the source code for the Radius website, available at https://radapp.io.
 
