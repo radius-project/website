@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
+  "Domain": "radapp.io",
+  "Id": "4c4247e0-35f4-4882-98d6-81288f23afe7"
+}
