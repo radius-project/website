@@ -34,7 +34,7 @@ jobs:
           fi
           hugo ${STAGING_URL+-b "$STAGING_URL"}
       - name: Upload Hugo artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: hugo_build
           path: ./public/
@@ -49,7 +49,7 @@ jobs:
       url: https://radapp.io
     steps:
       - name: Download Hugo artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: hugo_build
           path: site/
