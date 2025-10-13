@@ -7,7 +7,7 @@
         <div class="h3 mb-4">{{ site.Params.footer_menu_left }}</div>
         <ul class="list-unstyled footer-list">
           {{ range site.Menus.footer_left }}
-          <li><a href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a></li>
+          <li><a href="{{ .URL | relLangURL }}" title="{{ .Name }}" target="_blank" rel="noopener noreferrer">{{ .Name }}</a></li>
           {{ end }}
         </ul>
         {{ end }}
@@ -17,7 +17,7 @@
         <div class="h3 mb-4">{{ site.Params.footer_menu_middle }}</div>
         <ul class="list-unstyled footer-list">
           {{ range site.Menus.footer_middle }}
-          <li><a href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a></li>
+          <li><a href="{{ .URL | relLangURL }}" title="{{ .Name }}" target="_blank" rel="noopener noreferrer">{{ .Name }}</a></li>
           {{ end }}
         </ul>
         {{ end }}
@@ -27,7 +27,7 @@
         <div class="h3 mb-4">{{ site.Params.footer_menu_right }}</div>
         <ul class="list-unstyled footer-list">
           {{ range site.Menus.footer_right }}
-          <li><a href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a></li>
+          <li><a href="{{ .URL | relLangURL }}" title="{{ .Name }}" target="_blank" rel="noopener noreferrer">{{ .Name }}</a></li>
           {{ end }}
         </ul>
         {{ end }}
@@ -42,7 +42,7 @@
         {{ with site.Params.social }}
         <ul class="list-inline social-icons">
           {{ range . }}
-          <li class="list-inline-item"><a href="{{ .link | safeURL }}" title="{{ .title }}"><i class="{{ .icon }}"></i></a></li>
+          <li class="list-inline-item"><a href="{{ .link | safeURL }}" title="{{ .title }}" target="_blank" rel="noopener noreferrer"><i class="{{ .icon }}"></i></a></li>
           {{ end }}
         </ul>
         {{ end }}
@@ -51,7 +51,7 @@
     {{ end }}
     <div class="border-top border-default text-center py-4 mt-4">
       <p>Copyright &copy; 2025, The Radius Authors</p>
-      <p>The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, see <a href="https://www.linuxfoundation.org/legal/trademark-usage" class="footer-link-text">Trademark Usage page.</a></p>
+      <p>The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, see <a href="https://www.linuxfoundation.org/legal/trademark-usage" class="footer-link-text" target="_blank" rel="noopener noreferrer">Trademark Usage page.</a></p>
     </div>
   </div>
 </footer>
