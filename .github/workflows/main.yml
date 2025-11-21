@@ -1,3 +1,5 @@
+# yaml-language-server: $schema=https://www.schemastore.org/github-workflow.json
+---
 name: Radius Website
 
 on:
@@ -16,51 +18,55 @@ jobs:
     if: github.event.action != 'closed'
     runs-on: ubuntu-latest
     env:
-      GOVER: '^1.17'
+      GOVER: "^1.17"
       HUGO_ENV: production
-      SWA_BASE: 'brave-pond-00b49761e'
+      SWA_BASE: brave-pond-00b49761e
     steps:
       - name: Checkout website repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5.0.1
+
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2.5.0
+        uses: peaceiris/actions-hugo@75d2e84710de30f6ff7268e08f310b60ef14033f # v3.0.0
         with:
           hugo-version: 0.102.3
           extended: true
+
       - name: Build Hugo Site
         run: |
           if [ $GITHUB_EVENT_NAME == 'pull_request' ]; then
             STAGING_URL="https://${SWA_BASE}-${{github.event.number}}.3.azurestaticapps.net/"
           fi
           hugo ${STAGING_URL+-b "$STAGING_URL"}
+
       - name: Upload Hugo artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4 # v5.0.0
         with:
           name: hugo_build
           path: ./public/
           if-no-files-found: error
-  
+
   deploy:
     name: Deploy Hugo Website
-    needs: ['build']
+    needs: ["build"]
     runs-on: ubuntu-latest
     environment:
       name: latest
       url: https://radapp.io
     steps:
       - name: Download Hugo artifacts
-        uses: actions/download-artifact@v4.1.7
+        uses: actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53 # v6.0.0
         with:
           name: hugo_build
           path: site/
+
       - name: Deploy static web app
-        uses: Azure/static-web-apps-deploy@v1
+        uses: Azure/static-web-apps-deploy@4d27395796ac319302594769cfe812bd207490b1 # v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.SWA_TOKEN }}
           skip_deploy_on_missing_secrets: true
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          action: "upload"
-          app_location: "site/"
-          api_location: "site/" 
+          action: upload
+          app_location: site/
+          api_location: site/
           output_location: ""
           skip_app_build: true
