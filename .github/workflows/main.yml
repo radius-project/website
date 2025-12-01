@@ -12,18 +12,25 @@ on:
     branches:
       - main
 
+permissions: {}
+
 jobs:
   build:
     name: Build Hugo Website
     if: github.event.action != 'closed'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: read
     env:
       GOVER: "^1.17"
       HUGO_ENV: production
       SWA_BASE: brave-pond-00b49761e
     steps:
       - name: Checkout website repo
-        uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5.0.1
+        uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0
+        with:
+          persist-credentials: false
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@75d2e84710de30f6ff7268e08f310b60ef14033f # v3.0.0
@@ -33,7 +40,7 @@ jobs:
 
       - name: Build Hugo Site
         run: |
-          if [ $GITHUB_EVENT_NAME == 'pull_request' ]; then
+          if [ "${GITHUB_EVENT_NAME}" == 'pull_request' ]; then
             STAGING_URL="https://${SWA_BASE}-${{github.event.number}}.3.azurestaticapps.net/"
           fi
           hugo ${STAGING_URL+-b "$STAGING_URL"}
@@ -47,8 +54,9 @@ jobs:
 
   deploy:
     name: Deploy Hugo Website
-    needs: ["build"]
-    runs-on: ubuntu-latest
+    needs: [build]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
     environment:
       name: latest
       url: https://radapp.io
@@ -64,7 +72,7 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.SWA_TOKEN }}
           skip_deploy_on_missing_secrets: true
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          repo_token: ${{ github.token }}
           action: upload
           app_location: site/
           api_location: site/
