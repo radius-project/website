@@ -28,7 +28,7 @@ jobs:
       SWA_BASE: brave-pond-00b49761e
     steps:
       - name: Checkout website repo
-        uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0
+        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
         with:
           persist-credentials: false
 
@@ -68,7 +68,7 @@ jobs:
           path: site/
 
       - name: Deploy static web app
-        uses: Azure/static-web-apps-deploy@4d27395796ac319302594769cfe812bd207490b1 # v1
+        uses: Azure/static-web-apps-deploy@1a947af9992250f3bc2e68ad0754c0b0c11566c9 # v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.SWA_TOKEN }}
           skip_deploy_on_missing_secrets: true
