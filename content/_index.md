@@ -104,7 +104,7 @@ service:
 screenshot:
   enable: true
   title: "Learn more about Radius"
-  youtube_url: "https://www.youtube-nocookie.com/embed/-xcNd5ZU0Z8?si=1KIPvS0vQXj2HglY&start=1731"
+  youtube_url: "https://www.youtube-nocookie.com/embed/-xcNd5ZU0Z8?start=1731"
 
 ##################### Call to action #####################
 call_to_action:
