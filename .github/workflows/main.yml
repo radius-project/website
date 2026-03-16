@@ -28,7 +28,7 @@ jobs:
       SWA_BASE: brave-pond-00b49761e
     steps:
       - name: Checkout website repo
-        uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           persist-credentials: false
 
@@ -46,7 +46,7 @@ jobs:
           hugo ${STAGING_URL+-b "$STAGING_URL"}
 
       - name: Upload Hugo artifacts
-        uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4 # v5.0.0
+        uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f # v7.0.0
         with:
           name: hugo_build
           path: ./public/
@@ -62,13 +62,13 @@ jobs:
       url: https://radapp.io
     steps:
       - name: Download Hugo artifacts
-        uses: actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53 # v6.0.0
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
         with:
           name: hugo_build
           path: site/
 
       - name: Deploy static web app
-        uses: Azure/static-web-apps-deploy@4d27395796ac319302594769cfe812bd207490b1 # v1
+        uses: Azure/static-web-apps-deploy@1a947af9992250f3bc2e68ad0754c0b0c11566c9 # v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.SWA_TOKEN }}
           skip_deploy_on_missing_secrets: true
