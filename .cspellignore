@@ -222,7 +222,6 @@ iac
 iam
 icecream
 ified
-ifying
 infrastructure
 init
 initialDelaySeconds
@@ -323,7 +322,6 @@ repo
 repos
 resourceGroupName
 RecipeSpecified
-ifying
 resourceId
 resourcegroup
 rollout
@@ -1015,7 +1013,7 @@ ClusterIP
 NodePort
 replicaset
 radified
-ifying
+radifying
 cd
 ddgq
 dfc
@@ -1265,7 +1263,6 @@ SecretReference
 cyrilgdn
 secretStore
 postgreSQL
-postgresenvSecrets
 RecipeConfigPropertiesEnvSecrets
 SecretReference
 ProviderConfigPropertiesSecrets
