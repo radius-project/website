@@ -111,7 +111,7 @@ call_to_action:
   enable: true
   title: "Ready to get started?"
   image: "images/tools.png"
-  content: "Visit the Radius getting started guide to learn more and begin rad-ifying your first application today."
+  content: "Visit the Radius getting started guide to learn more and begin radifying your first application today."
   button:
     enable: true
     label: "Get Started"

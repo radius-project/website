@@ -1013,6 +1013,7 @@ ClusterIP
 NodePort
 replicaset
 radified
+radifying
 cd
 ddgq
 dfc
@@ -1262,7 +1263,6 @@ SecretReference
 cyrilgdn
 secretStore
 postgreSQL
-postgresenvSecrets
 RecipeConfigPropertiesEnvSecrets
 SecretReference
 ProviderConfigPropertiesSecrets
