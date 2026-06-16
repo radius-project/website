@@ -24,7 +24,6 @@ ignoreRegExpList:
   - adr_yaml_formatter
   - inline_code
   - tf_docs
-  - md_image_link
   - md_link
   - url
   - at_mention
@@ -60,9 +59,6 @@ patterns:
   # typos in the visible link text or image alt text are still caught.
   # Matches both `[text](url)` and `![alt](url)` because we only skip the
   # parentheses payload.
-  - name: md_image_link
-    pattern:
-      - /\]\([^)]*\)/g
   - name: md_link
     pattern:
       - /\]\([^)]*\)/g
