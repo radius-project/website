@@ -6,13 +6,11 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - v*.*
-      - edge
+      - main
   pull_request:
     types: [opened, synchronize, reopened]
     branches:
-      - v*.*
-      - edge
+      - main
 
 permissions: {}
 
