@@ -5,18 +5,24 @@
 # Source: https://github.com/radius-project/.github
 # ------------------------------------------------------------------------------
 ---
-name: Spellcheck
+name: Dependabot Manager
 
 on:
-  workflow_dispatch:
   pull_request:
-    types: [opened, synchronize, reopened]
+    types:
+      - opened
+      - reopened
+      - synchronize
 
 permissions: {}
 
 jobs:
-  spellcheck:
-    uses: radius-project/.github/.github/workflows/__spellcheck.yml@main
+  dependabot-manager:
+    if: github.event.pull_request.user.login == 'dependabot[bot]'
+    uses: radius-project/.github/.github/workflows/__dependabot-manager.yml@main
     permissions:
       contents: read
-      pull-requests: write
+      pull-requests: read
+    secrets:
+      DEPENDABOT_MANAGER_BOT_CLIENT_ID: ${{ secrets.DEPENDABOT_MANAGER_BOT_CLIENT_ID }}
+      DEPENDABOT_MANAGER_BOT_PRIVATE_KEY: ${{ secrets.DEPENDABOT_MANAGER_BOT_PRIVATE_KEY }}
