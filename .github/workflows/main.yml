@@ -25,7 +25,6 @@ jobs:
     env:
       GOVER: "^1.17"
       HUGO_ENV: production
-      SWA_BASE: brave-pond-00b49761e
     steps:
       - name: Checkout website repo
         uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
@@ -41,9 +40,10 @@ jobs:
       - name: Build Hugo Site
         run: |
           if [ "${GITHUB_EVENT_NAME}" == 'pull_request' ]; then
-            STAGING_URL="https://${SWA_BASE}-${{github.event.number}}.3.azurestaticapps.net/"
+            hugo -b "/"
+          else
+            hugo
           fi
-          hugo ${STAGING_URL+-b "$STAGING_URL"}
 
       - name: Upload Hugo artifacts
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
