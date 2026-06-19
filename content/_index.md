@@ -56,7 +56,7 @@ service:
       button:
         enable: false
         label: "Learn More"
-        link: "https://docs.radapp.io/concepts/application-graph"
+        link: "https://docs.radapp.io/concepts/applications/"
 
     # Application Graph
     - title: "Application Graph"
@@ -66,7 +66,7 @@ service:
       button:
         enable: false
         label: "Learn More"
-        link: "https://docs.radapp.io/concepts/application-graph"
+        link: "https://docs.radapp.io/concepts/applications/"
       
     #  Environments and Recipes
     - title: "Infrastructure Recipes"
