@@ -76,7 +76,7 @@ service:
       button:
         enable: true
         label: "Learn More"
-        link: "https://docs.radapp.io/guides/recipes/overview"
+        link: "https://docs.radapp.io/guides/recipes/"
 
     # Cloud neutral
     - title: "Cloud Neutral"
