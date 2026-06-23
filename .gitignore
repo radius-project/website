@@ -2,3 +2,6 @@
 _gen/
 .DS_Store
 public/*
+resources/
+node_modules/
+_vendor/

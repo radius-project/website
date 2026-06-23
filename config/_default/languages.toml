@@ -1,6 +1,6 @@
 ############################# English ############################
 [en]
-languageName = "En"
+label = "En"
 title = "Radius"
 contentDir = "content"
 weight = 1
