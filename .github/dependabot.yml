@@ -8,7 +8,6 @@
 ---
 version: 2
 
-
 updates:
   - package-ecosystem: github-actions
     directory: "/"
@@ -24,6 +23,50 @@ updates:
       - deps/github-actions
     groups:
       github-actions:
+        applies-to: version-updates
+        patterns:
+          - "*"
+      security:
+        applies-to: security-updates
+        patterns:
+          - "*"
+
+  - package-ecosystem: gomod
+    directory: "/"
+    schedule:
+      interval: weekly
+    cooldown:
+      default-days: 7
+    commit-message:
+      prefix: chore
+      include: scope
+    labels:
+      - dependencies
+      - deps/gomod
+    groups:
+      go-deps:
+        applies-to: version-updates
+        patterns:
+          - "*"
+      security:
+        applies-to: security-updates
+        patterns:
+          - "*"
+
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: weekly
+    cooldown:
+      default-days: 7
+    commit-message:
+      prefix: chore
+      include: scope
+    labels:
+      - dependencies
+      - deps/npm
+    groups:
+      javascript-deps:
         applies-to: version-updates
         patterns:
           - "*"
