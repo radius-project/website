@@ -14,3 +14,9 @@ googleAnalytics = "G-0EZZYE4MPR" # example : UA-123-45
 # unsafe html
 [markup.goldmark.renderer]
 unsafe = true
+
+# Hugo Modules
+[module]
+[module.hugoVersion]
+extended = true
+min = "0.157.0"

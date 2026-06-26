@@ -1,0 +1,29 @@
+{
+  "name": "radius-website",
+  "version": "0.0.0",
+  "description": "Source for the Radius website (https://radapp.io).",
+  "license": "Apache-2.0",
+  "homepage": "https://radapp.io",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/radius-project/website.git"
+  },
+  "devDependencies": {
+    "hugo-extended": "0.163.3",
+    "rimraf": "^6.1.3"
+  },
+  "scripts": {
+    "build": "hugo --gc --minify",
+    "build:preview": "hugo --gc --minify --buildDrafts --buildFuture",
+    "start": "hugo server",
+    "start:drafts": "hugo server --buildDrafts --navigateToChanged",
+    "hugo": "hugo",
+    "hugo:version": "hugo version",
+    "hugo:mod:get": "hugo mod get",
+    "hugo:mod:tidy": "hugo mod tidy",
+    "hugo:mod:clean": "hugo mod clean --all",
+    "hugo:mod:graph": "hugo mod graph",
+    "clean": "hugo --gc && rimraf public resources"
+  }
+}

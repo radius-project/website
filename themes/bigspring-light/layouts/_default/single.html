@@ -12,9 +12,9 @@
         {{ end }}
         <h2 class="mb-4">{{ .Title }}</h2>
         <div class="content">{{.Content}}</div>
-        
+
         <!-- comments -->
-        {{ if site.DisqusShortname }}
+        {{ if site.Config.Services.Disqus.Shortname }}
         <div class="mt-5">
           {{ template "_internal/disqus.html" . }}
         </div>
