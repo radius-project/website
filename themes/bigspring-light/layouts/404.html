@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ with site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+<html lang="{{ with site.Language.Locale }}{{ . }}{{ else }}en-US{{ end }}">
 <head>
 	{{ partial "head.html" . }}
 	{{ partialCached "style.html" . }}
@@ -8,7 +8,7 @@
 <body>
 	{{- partial "preloader.html" . -}}
 	{{- partial "header.html" . -}}
-    
+
     <section class="banner">
         <div class="container">
           <div class="row">

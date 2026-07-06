@@ -1,9 +1,11 @@
 ############################# English ############################
 [en]
-languageName = "En"
+label = "En"
 title = "Radius"
 contentDir = "content"
 weight = 1
+
+[en.params]
 ########### footer content ##########
 footer_menu_left = "Learn"
 footer_menu_middle = "Community"
