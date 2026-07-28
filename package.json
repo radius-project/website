@@ -10,7 +10,7 @@
     "url": "https://github.com/radius-project/website.git"
   },
   "devDependencies": {
-    "hugo-extended": "0.163.3",
+    "hugo-extended": "0.164.0",
     "rimraf": "^6.1.3"
   },
   "scripts": {
