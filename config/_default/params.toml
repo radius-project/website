@@ -33,7 +33,7 @@ link = "https://aka.ms/radius/discord"
 enable = true
 content = "Now in preview: Radius Canvas Extension for the GitHub Copilot app."
 label = "Learn more"
-link = "https://edge.docs.radapp.io/integrations/github-copilot-app/canvas-extension/"
+link = "https://docs.radapp.io/integrations/github-copilot-app/canvas-extension/"
 
 # cookies
 [cookies]
