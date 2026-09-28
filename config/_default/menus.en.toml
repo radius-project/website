@@ -2,7 +2,7 @@
 
 [[main]]
 name = "Docs"
-url = "https://edge.docs.radapp.io"
+url = "https://docs.radapp.io"
 weight = 1
 
 [[main]]
@@ -33,23 +33,23 @@ weight = 6
 # footer menu left
 [[footer_left]]
 name = "Concepts"
-url = "https://edge.docs.radapp.io/concepts/"
+url = "https://docs.radapp.io/concepts/"
 
 [[footer_left]]
 name = "Getting Started"
-url = "https://edge.docs.radapp.io/getting-started/"
+url = "https://docs.radapp.io/getting-started/"
 
 [[footer_left]]
 name = "How-To guides: Manage applications"
-url = "https://edge.docs.radapp.io/applications/"
+url = "https://docs.radapp.io/applications/"
 
 [[footer_left]]
 name = "How-To guides: Extend Radius"
-url = "https://edge.docs.radapp.io/extensibility/"
+url = "https://docs.radapp.io/extensibility/"
 
 [[footer_left]]
 name = "How-To guides: Manage Radius"
-url = "https://edge.docs.radapp.io/management/"
+url = "https://docs.radapp.io/management/"
 
 [[footer_left]]
 name = "Roadmap"

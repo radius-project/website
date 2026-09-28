@@ -7,7 +7,7 @@ banner:
   button:
     enable: true
     label: "Get Started"
-    link: "https://edge.docs.radapp.io/getting-started"
+    link: "https://docs.radapp.io/getting-started"
 
 ##################### Feature ##########################
 feature:
@@ -57,7 +57,7 @@ service:
       button:
         enable: true
         label: "Learn More"
-        link: "https://edge.docs.radapp.io/integrations/github-copilot-app/canvas-extension/"
+        link: "https://docs.radapp.io/integrations/github-copilot-app/canvas-extension/"
 
     # Developer + Operator Collaboration
     - title: "Developer + Operator Collaboration"
@@ -67,7 +67,7 @@ service:
       button:
         enable: true
         label: "Learn More"
-        link: "https://edge.docs.radapp.io/concepts/"
+        link: "https://docs.radapp.io/concepts/"
 
     # Application Graph
     - title: "Application Graph"
@@ -77,7 +77,7 @@ service:
       button:
         enable: true
         label: "Learn More"
-        link: "https://edge.docs.radapp.io/concepts/applications/"
+        link: "https://docs.radapp.io/concepts/applications/"
 
     #  Environments and Recipes
     - title: "Infrastructure Recipes"
@@ -87,7 +87,7 @@ service:
       button:
         enable: true
         label: "Learn More"
-        link: "https://edge.docs.radapp.io/concepts/recipe-packs/"
+        link: "https://docs.radapp.io/concepts/recipe-packs/"
 
     # Cloud neutral
     - title: "Cloud Neutral"
@@ -97,7 +97,7 @@ service:
       button:
         enable: true
         label: "Learn More"
-        link: "https://edge.docs.radapp.io/installation/cloud-providers/"
+        link: "https://docs.radapp.io/installation/cloud-providers/"
 
     # Dapr
     - title: "Dapr + Radius: Better Together"
@@ -107,7 +107,7 @@ service:
       button:
         enable: true
         label: "Learn More"
-        link: "https://edge.docs.radapp.io/integrations/dapr/"
+        link: "https://docs.radapp.io/integrations/dapr/"
 
     # Meet Customers where they are
     - title: "Leverage Existing Tools"
@@ -117,7 +117,7 @@ service:
       button:
         enable: true
         label: "Learn More"
-        link: "https://edge.docs.radapp.io/integrations/"
+        link: "https://docs.radapp.io/integrations/"
 
 ################### Screenshot ########################
 screenshot:
@@ -134,7 +134,7 @@ call_to_action:
   button:
     enable: true
     label: "Get Started"
-    link: "https://edge.docs.radapp.io/getting-started/"
+    link: "https://docs.radapp.io/getting-started/"
 
 ##################### CNCF ###########################
 cncf:
