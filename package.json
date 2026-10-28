@@ -30,5 +30,8 @@
     "hugo:mod:clean": "hugo mod clean --all",
     "hugo:mod:graph": "hugo mod graph",
     "clean": "hugo --gc && rimraf public resources"
+  },
+  "allowScripts": {
+    "hugo-extended": true
   }
 }
