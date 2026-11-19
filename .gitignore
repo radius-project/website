@@ -1,7 +1,13 @@
-**.lock
-_gen/
-.DS_Store
-public/*
-resources/
+# Hugo build output, caches, and vendored modules
+/public/
+/resources/
+/_gen/
+/_vendor/
+/.hugo_build.lock
+
+# Local dependencies and build output
 node_modules/
-_vendor/
+/.cache/
+/dist/
+
+.DS_Store

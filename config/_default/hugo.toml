@@ -1,4 +1,3 @@
-######################## default configuration ####################
 baseURL = "https://radapp.io/"
 title = "Radius"
 theme = "bigspring-light"

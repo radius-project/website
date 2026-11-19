@@ -12,7 +12,7 @@ weight = 2
 
 [[main]]
 name = "Blog"
-url = "https://blog.radapp.io/posts"
+url = "https://blog.radapp.io/"
 weight = 3
 
 [[main]]
@@ -67,4 +67,4 @@ url = "https://aka.ms/Radius/Discord"
 # footer menu right
 [[footer_right]]
 name = "Blogs"
-url = "https://blog.radapp.io/posts"
+url = "https://blog.radapp.io/"

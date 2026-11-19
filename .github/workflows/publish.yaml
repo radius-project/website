@@ -1,0 +1,128 @@
+# yaml-language-server: $schema=https://www.schemastore.org/github-workflow.json
+---
+name: Publish
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  schedule:
+    - cron: 0 16 * * *
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  build:
+    name: Build
+    if: github.event_name == 'pull_request' || github.ref == 'refs/heads/main'
+    runs-on: ubuntu-26.04
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      pages: read
+    env:
+      HUGO_ENVIRONMENT: production
+      # Use a distinct name on rebuilds; deploy-only retries reuse the build output.
+      PAGES_ARTIFACT_NAME: github-pages-${{ github.run_attempt }}
+    outputs:
+      pages-artifact: ${{ env.PAGES_ARTIFACT_NAME }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Configure GitHub Pages
+        if: github.event_name != 'pull_request'
+        id: pages
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
+
+      - name: Setup Go
+        uses: actions/setup-go@d8cbb8045d7f43706b9177cceb36c1f91a6644d5 # v7.1.0
+        with:
+          go-version-file: go.mod
+          cache-dependency-path: go.sum
+
+      - name: Setup Node
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version-file: .node-version
+          cache: npm
+          cache-dependency-path: package-lock.json
+
+      - name: Install Node.js dependencies
+        run: npm ci
+
+      - name: Cache Hugo resources
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: ${{ runner.temp }}/hugo-cache
+          key: hugo-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('go.sum', 'package-lock.json') }}
+
+      - name: Build site
+        env:
+          HUGO_CACHEDIR: ${{ runner.temp }}/hugo-cache
+          PAGES_HOST: ${{ steps.pages.outputs.host }}
+          PAGES_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+        run: |
+          if [[ "$GITHUB_EVENT_NAME" == "pull_request" ]]; then
+            npm run build:preview -- --baseURL http://localhost:8000/
+          else
+            : "${PAGES_HOST:?GitHub Pages did not provide a host}"
+            npm run build -- --baseURL "https://${PAGES_HOST}${PAGES_BASE_PATH}/"
+          fi
+
+          for entry in public/index.html public/404.html; do
+            if [[ ! -s "$entry" ]]; then
+              echo "::error::Missing or empty Hugo output: $entry"
+              exit 1
+            fi
+          done
+
+      - name: Upload pull request preview
+        if: github.event_name == 'pull_request'
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: preview-${{ github.run_attempt }}
+          path: public/
+          if-no-files-found: error
+          retention-days: 7
+
+      - name: Upload GitHub Pages artifact
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          name: ${{ env.PAGES_ARTIFACT_NAME }}
+          path: public/
+          retention-days: 7
+
+  deploy:
+    name: Deploy
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-26.04
+    timeout-minutes: 15
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy the built artifact
+        id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
+        with:
+          artifact_name: ${{ needs.build.outputs.pages-artifact }}
